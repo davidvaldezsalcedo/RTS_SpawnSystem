@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb259055ed94c434aafe76ca5166c96d, type: 3}
+  m_Name: Building_CC
+  m_EditorClassIdentifier: 
+  ObjectsInBuilding:
+  - {fileID: 1319920691472216, guid: 476520b01e978a745aa2b3bed57712cc, type: 2}
+  - {fileID: 1680922226455524, guid: fd52699bff8dc1742891e26d5b4ece87, type: 2}
+  - {fileID: 1601148124778402, guid: 491506c0cb11cf041bbe13eb0349fe69, type: 2}
+  - {fileID: 1126059536503466, guid: d69bfb8bd159b06479844ba78baf6821, type: 2}
+  - {fileID: 1906296438818216, guid: dc2a41ab9fceb4548a6addb0385fe620, type: 2}
+  - {fileID: 1300610311600652, guid: 6fc051d643f7d934bb4b6e0c90afc2ca, type: 2}
+  ImagesForObjects:
+  - {fileID: 21300000, guid: 749cc1fc58787914cad0cab95f1beb63, type: 3}
+  - {fileID: 21300000, guid: 47a9a553837dbc347bb53ddcd30a76bc, type: 3}
+  - {fileID: 21300000, guid: dcef422074ac5234e87d5f6e734a364c, type: 3}
+  - {fileID: 21300000, guid: 749cc1fc58787914cad0cab95f1beb63, type: 3}
+  - {fileID: 21300000, guid: 47a9a553837dbc347bb53ddcd30a76bc, type: 3}
+  - {fileID: 21300000, guid: dcef422074ac5234e87d5f6e734a364c, type: 3}
+  TextForButtons:
+  - Advanced Artillery
+  - Advanced Infantry
+  - Artillery
+  - Command Centre
+  - Infantry
+  - Watch Tower
