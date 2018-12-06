@@ -35,10 +35,7 @@ namespace RTSSpawner
 			for (int i = 0; i < _Buttons.Count; ++i)
 			{
 				_Buttons[i].gameObject.SetActive(false);
-				if(_Buttons[i].onClick.GetPersistentEventCount() > 0)
-				{
-					UnityEventTools.RemovePersistentListener(_Buttons[i].onClick, 0);
-				}
+				_Buttons[i].onClick.RemoveAllListeners();
 			}
 
 			for (int i = 0; i < _Buttons.Count; ++i)
@@ -46,8 +43,9 @@ namespace RTSSpawner
 				if(i <= buildingType.ObjectsInBuilding.Length - 1)
                 {
                     SetUpButtons(buildingType, i);
-                    UnityEventTools.AddObjectPersistentListener<GameObject>(_Buttons[i].onClick, Spawn, buildingType.ObjectsInBuilding[i]);
-                }
+					GameObject objectToSpawn = buildingType.ObjectsInBuilding[i];
+					_Buttons[i].onClick.AddListener(() => Spawn(objectToSpawn));                
+				}
             }
 		}
 
